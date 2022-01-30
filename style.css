@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+	margin: 0 0;
+	font-family: "Montserrat", sans-serif;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(10, 3, 28);
+	user-select: none;
+	background: radial-gradient(
+		circle,
+		rgb(36, 36, 43) 0%,
+		rgb(44, 47, 61) 45%,
+		rgb(43, 51, 75) 100%
+	);
+}
+.alcentre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div.content {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	margin: 0 0;
+	padding: 0 0;
+	transition: ease-in 0.5s;
+}
+div.box {
+	position: absolute;
+	width: 600px;
+	height: 80vh;
+	margin-right: calc(90vw - 600px);
+	background-color: #fff;
+	border-radius: 5px;
+}
+div.grafTitle {
+	margin-top: 3vh;
+	height: 6vh;
+	font-size: 50px;
+	font-weight: bolder;
+}
+div.ubTitle {
+	font-size: 20px;
+	font-weight: bolder;
+	color: rgb(29, 29, 29);
+}
+div.filler {
+	height: 30vh;
+	margin: 0 3vh;
+	background: url("assets/graf.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+input.code {
+	height: 4.5vh;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 2vh;
+	border: 1px solid rgb(30, 12, 75);
+	outline: none;
+	padding: 5px;
+	width: 80%;
+	font-family: "Montserrat", sans-serif;
+}
+div.submit {
+	background: rgb(10, 3, 28);
+	border: 1px solid rgb(49, 22, 116);
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	width: 80%;
+	height: 4.5vh;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-weight: bolder;
+	transition: 0.5s;
+	cursor: pointer;
+}
+div.submit:hover {
+	color: #000;
+	background: rgb(234, 233, 236);
+	transition: 0.2s;
+	rotate: 50deg;
+}
+
+div.map {
+	position: fixed;
+}
+
+div.header {
+	width: 100vw;
+	height: 7vh;
+}
+
+div.sideMenu {
+	width: 20vw;
+}
+
+div.searchbar {
+	width: 60vw;
+}
+div.config {
+	width: 20vw;
+	display: inline-block;
+	text-align: right;
+}
+
+input.search {
+	height: 2.5vh;
+	border-radius: 5px;
+	text-align: left;
+	font-size: 1.5vh;
+	border: 1px solid rgb(30, 12, 75);
+	outline: none;
+	padding: 5px 10px;
+	width: 80%;
+	font-family: "Montserrat", sans-serif;
+}
+span.onlineCard {
+	font-size: 1.5vh;
+	padding: 0.5vh 1.5vw;
+	font-weight: 500;
+	color: white;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 0.5s;
+	border: 2px solid rgb(65, 196, 65);
+	background-color: rgba(65, 196, 65, 0.5);
+}
+span.logoutCard {
+	font-size: 1.5vh;
+	padding: 0.5vh 1.5vw;
+	font-weight: bold;
+	color: white;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-left: 5vw;
+	margin-right: 1vw;
+	background-color: rgba(196, 65, 65, 0.5);
+	border: 2px solid rgb(196, 65, 65);
+}
+span.logoutCard:hover {
+	background-color: rgba(196, 65, 65);
+}
+@media only screen and (max-width: 769px) {
+	div.container {
+		width: 100vw;
+		height: 100vh;
+	}
+	div.box {
+		margin: 0 0;
+		width: 80vw;
+		height: 80vh;
+		border-radius: 5px;
+	}
+	div.sideMenu {
+		display: none;
+	}
+	input.search {
+		width: 100%;
+	}
+	div.searchbar {
+		width: 80vw;
+	}
+	div.config {
+		width: 10vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	span.onlineCard {
+		display: none;
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height,initial-scale=1.0, user-scalable=no"
+		/>
+		<script
+			src="https://kit.fontawesome.com/56d4e5db3d.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/two.js@latest/build/two.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/jonobr1/two.js@dev/extras/js/zui.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>GRAF - Universitat de βarcelona</title>
+	</head>
+
+	<body>
+		<div class="content alcentre" id="loginBody" style="z-index: 3">
+			<div class="box alcentre">
+				<div style="width: 100%">
+					<div class="alcentre grafTitle">GRAF</div>
+					<div class="alcentre ubTitle">Universitat de βarcelona</div>
+					<div class="filler"></div>
+					<div class="input alcentre">
+						<input
+							class="code"
+							placeholder="Identificació"
+							type="password"
+							name="codeInput"
+							id="codeInput"
+						/>
+					</div>
+					<div class="alcentre">
+						<div class="submit alcentre" onclick="login()">ENTRAR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content" id="grafBody" style="display: none">
+			<div class="header alcentre" style="z-index: 3">
+				<div class="sideMenu alcentre"></div>
+				<div class="searchbar alcentre">
+					<input type="text" class="search" placeholder="Busca" />
+				</div>
+				<div class="config">
+					<span class="onlineCard">2 Online</span>
+					<span class="logoutCard"
+						><i class="fas fa-sign-out-alt" style="color: white"></i
+					></span>
+				</div>
+			</div>
+		</div>
+		<div class="map" id="map"></div>
+	</body>
+	<script src="scripts/canvas.js"></script>
+	<script src="scripts/main.js"></script>
+</html>
